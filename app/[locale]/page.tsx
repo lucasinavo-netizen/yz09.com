@@ -13,6 +13,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const t = await getTranslations({ locale, namespace: "home" });
 
   return {
+    robots: { index: true, follow: true, googleBot: { "max-image-preview": "large" } },
     title: t("title"),
     description: t("description"),
     alternates: {
