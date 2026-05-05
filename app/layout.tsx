@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "NXckRye6Vpw_8pZKm7oO3C7lqrSTr413-taVEYy-4Jk",
+    other: {
+      "msvalidate.01": "F31A3989097533BDEBEE5C6AB2C37732",
+    },
   },
 
   openGraph: { images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'yz09.com' }] },
@@ -23,4 +26,3 @@ export default function RootLayout({
 }>) {
   return children;
 }
-
