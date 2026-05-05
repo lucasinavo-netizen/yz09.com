@@ -13,6 +13,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const t = await getTranslations({ locale, namespace: "home" });
 
   return {
+    verification: {
+      other: {
+        "msvalidate.01": "F31A3989097533BDEBEE5C6AB2C37732",
+      },
+    },
     robots: { index: true, follow: true, googleBot: { "max-image-preview": "large" } },
     title: t("title"),
     description: t("description"),
@@ -185,4 +190,3 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     </div>
   );
 }
-
