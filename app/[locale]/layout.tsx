@@ -119,6 +119,9 @@ export default async function LocaleLayout({
 
   return (
     <html lang='my-MM'>
+      <head>
+        <meta name="msvalidate.01" content="F31A3989097533BDEBEE5C6AB2C37732" />
+      </head>
       <body>
       {/* <LangSetter locale={locale} /> */}
       {/* Google Analytics */}
