@@ -73,6 +73,14 @@ export default async function LocaleLayout({
     <html lang='my-MM'>
       <head>
         <meta name="msvalidate.01" content="F31A3989097533BDEBEE5C6AB2C37732" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
       </head>
       <body>
       {/* <LangSetter locale={locale} /> */}
@@ -92,18 +100,6 @@ export default async function LocaleLayout({
             gtag('config', 'G-HRDGFWT9KP');
           `,
         }}
-      />
-      <Script
-        id="website-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
-      />
-      <Script
-        id="organization-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
       />
       <NextIntlClientProvider messages={messages}>
         <AgeVerification />
