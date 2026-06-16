@@ -7,9 +7,9 @@ export default async function NotFound() {
   const tCommon = await getTranslations("common");
   
   const brandLinks = [
-    "https://www.yes8.io/m/home?affiliateCode=seom1802",
-    "https://www.ygn9.net/m/home?affiliateCode=seom1902",
-    "https://www.pya777.net/m/home?affiliateCode=seom2002",
+    "/go/y",
+    "/go/y",
+    "/go/y",
   ];
 
   const randomBrandLink = brandLinks[Math.floor(Math.random() * brandLinks.length)];

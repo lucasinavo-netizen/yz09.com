@@ -38,6 +38,12 @@ const nextConfig = {
       { source: '/', destination: '/my' },
     ];
   },
+  async redirects() {
+    return [
+      // Affiliate cloaking — hide operator URL/ID from Google. Disallowed in robots.txt.
+      { source: '/go/y', destination: 'https://www.rr95k.com/?ch=0cf28df51e', permanent: false },
+    ];
+  },
   async headers() {
     return [
       {

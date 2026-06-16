@@ -30,12 +30,12 @@ export default async function BonusesPage({ params }: { params: Promise<{ locale
   const t = await getTranslations({ locale, namespace: "bonuses" });
   const casinos = getCasinos(locale);
   const brandLinks = [
-    "https://www.yes8.io/m/home?affiliateCode=seom1802",
-    "https://www.ygn9.net/m/home?affiliateCode=seom1902",
-    "https://www.pya777.net/m/home?affiliateCode=seom2002",
-    "https://www.mmk99.net/m/home?affiliateCode=seom2102",
-    "https://www.kbz999.net/m/home?affiliateCode=seom2202",
-    "https://www.mmk123.net/m/home?affiliateCode=seom2302",
+    "/go/y",
+    "/go/y",
+    "/go/y",
+    "/go/y",
+    "/go/y",
+    "/go/y",
   ];
 
   const allBonuses = casinos.flatMap((casino) =>
