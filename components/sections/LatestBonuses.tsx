@@ -19,10 +19,10 @@ export default function LatestBonuses() {
   );
 
   const brandLinks = [
-    "https://www.yes8.io/m/home?affiliateCode=seom1802",
-    "https://www.ygn9.net/m/home?affiliateCode=seom1902",
-    "https://www.pya777.net/m/home?affiliateCode=seom2002",
-    "https://www.mmk99.net/m/home?affiliateCode=seom2102",
+    "/go/y",
+    "/go/y",
+    "/go/y",
+    "/go/y",
   ];
 
   // Merge bonuses with random brand links for variety
