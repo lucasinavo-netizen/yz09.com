@@ -24,9 +24,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 }
 
 const brandLinks = [
-  "https://www.yes8.io/m/home?affiliateCode=seom1802",
-  "https://www.ygn9.net/m/home?affiliateCode=seom1902",
-  "https://www.pya777.net/m/home?affiliateCode=seom2002",
+  "/go/y",
+  "/go/y",
+  "/go/y",
 ];
 
 export default async function GuidePage({ params }: { params: Promise<{ locale: string }> }) {

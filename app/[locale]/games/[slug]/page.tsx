@@ -8,9 +8,9 @@ import gamesData from "@/data/games.json";
 import { getBaseUrl, getCanonicalUrl, getAlternateLanguages } from "@/lib/config";
 
 const brandLinks = [
-  "https://www.yes8.io/m/home?affiliateCode=seom1802",
-  "https://www.ygn9.net/m/home?affiliateCode=seom1902",
-  "https://www.pya777.net/m/home?affiliateCode=seom2002",
+  "/go/y",
+  "/go/y",
+  "/go/y",
 ];
 
 // 波動性緬甸語翻譯
