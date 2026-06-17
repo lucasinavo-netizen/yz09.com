@@ -83,6 +83,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/compare" className="text-white/70 hover:text-gold text-sm transition-colors">
+                  Compare (EN)
+                </Link>
+              </li>
+              <li>
                 <Link href="/bonuses" className="text-white/70 hover:text-gold text-sm transition-colors">
                   {tCommon("bonuses")}
                 </Link>
