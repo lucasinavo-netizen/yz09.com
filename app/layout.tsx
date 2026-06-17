@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     apple: "/images/favicon.png",
   },
   verification: {
-    google: "NXckRye6Vpw_8pZKm7oO3C7lqrSTr413-taVEYy-4Jk",
+    google: "ucFKBTzmfGzh3w57ZfVgmqWH2zkU1DU2UW0oePVSuZM",
     other: {
       "msvalidate.01": "F31A3989097533BDEBEE5C6AB2C37732",
     },
