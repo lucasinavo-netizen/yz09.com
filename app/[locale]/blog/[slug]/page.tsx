@@ -24,6 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: `${post.title} | Myanmar Casino Reviews`,
     description: post.excerpt,
+    robots: { index: false, follow: true },
     alternates: {
       canonical,
       languages: getAlternateLanguages(path),

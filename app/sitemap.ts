@@ -1,7 +1,5 @@
 import { MetadataRoute } from 'next';
 import casinosEn from '@/data/casinos-en.json';
-import gamesData from '@/data/games.json';
-import { getBlogPostBySlug, getBlogPosts } from '@/lib/get-blog-posts';
 import { locales, defaultLocale } from '@/i18n/config';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -64,25 +62,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     createSitemapEntry(path, new Date(), 'weekly', 0.9)
   );
 
-  const gamePages: MetadataRoute.Sitemap = gamesData.map((game: { slug: string }) =>
-    createSitemapEntry(`/games/${game.slug}`, new Date(), 'weekly', 0.8)
-  );
-
-  const blogListPage: MetadataRoute.Sitemap = [createSitemapEntry('/blog', new Date(), 'daily', 0.8)];
-
-  const allBlogSlugs = [...new Set([...getBlogPosts('en').map((p) => p.slug), ...getBlogPosts('my').map((p) => p.slug)])];
-  const blogPostPages: MetadataRoute.Sitemap = allBlogSlugs.map((slug) => {
-    const post = getBlogPostBySlug(slug, 'my') ?? getBlogPostBySlug(slug, 'en');
-    const lastMod = post ? new Date(post.lastModified || post.publishDate) : new Date();
-    return createSitemapEntry(`/blog/${slug}`, lastMod, 'weekly', 0.7);
-  });
-
   return [
     ...staticPages,
     ...casinoPages,
     ...gameCategoryPages,
-    ...gamePages,
-    ...blogListPage,
-    ...blogPostPages,
+    // gamePages + blogPostPages + blogListPage removed — 74 thin/unindexed pages (0 impr in 90d).
+    // Pages get robots:noindex via generateMetadata for active deindexing.
   ];
 }
