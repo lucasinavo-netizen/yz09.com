@@ -73,6 +73,7 @@ export default async function LocaleLayout({
     <html lang='my-MM'>
       <head>
         <meta name="msvalidate.01" content="F31A3989097533BDEBEE5C6AB2C37732" />
+        <meta name="google-site-verification" content="ucFKBTzmfGzh3w57ZfVgmqWH2zkU1DU2UW0oePVSuZM" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
