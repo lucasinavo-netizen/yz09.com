@@ -1,0 +1,64 @@
+# SEO Profile — single source of truth for this site.
+# Every employee agent MUST read this before acting on the site.
+# Update `current_state` + `last_full_audit` after every audit.
+
+url: yz09.com
+url_canonical: https://yz09.com/
+brand_name: YZ09
+
+# Infrastructure
+framework: next.js (canary turbopack)
+hosting: netlify
+github_repo: lucasinavo-netizen/yz09.com
+
+
+# Analytics
+gsc:
+  property: https://yz09.com/
+  verified: true
+  permission: siteOwner
+  service_account_owner: true
+
+ga4:
+  property_id: "516901357"
+  measurement_id: G-HRDGFWT9KP
+  service_account_viewer: true
+
+# Brand / Positioning
+target_market: Myanmar (MM)
+target_language: my-MM
+target_keywords:
+  primary: ["yz09", "casino myanmar"]
+  secondary: []
+position: "YZ09 — Myanmar gambling network"
+
+# Affiliate
+affiliate_cloak_path: /go/y
+affiliate_destination: https://www.mm38aa.com/m/home?affiliateCode=lu0001
+
+# Current State (auto-updated by sk-tech / sk-content)
+current_state:
+  body_words: 6353
+  h2_count: many
+  h3_count: many
+  sitemap_urls: 25
+  indexed_pages_90d: 10
+  clicks_90d: 13
+  impressions_90d: 59
+  last_full_audit: 2026-06-17
+  last_content_update: 2026-06-18
+  last_visual_screenshot: /tmp/all-sites-visual/yz09.com.png
+
+# Known Issues
+known_issues: []
+
+# Confirmed Facts
+confirmed_facts:
+  pbn_inline_strategy: nofollow  # All cross-network <a href> require rel=nofollow noopener noreferrer
+
+# Pending Decisions
+pending_decisions: []
+
+# Site-Specific Notes
+notes:
+  - "NEXT.JS — netlify deploy --prod --build (NEVER --dir .). Chinese path causes Turbopack panic → rsync to /tmp/yz09-build/. Correct Netlify site ID f020e6ab-c3c3-420c-a14e-a62b38732563 (NOT steady-bunny-19559b). 74 thin pages noindex (52 blog + 22 game). Locale layout has hardcoded msvalidate meta — schema/verification go there."
