@@ -36,7 +36,7 @@ const paymentMethodLimits = [
 
 const brandLinks = [
   "/go/y",
-  "/go/y",
+  "/go/y2",
   "/go/y",
 ];
 

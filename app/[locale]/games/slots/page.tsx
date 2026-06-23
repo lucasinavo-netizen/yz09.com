@@ -8,7 +8,7 @@ import { getCanonicalUrl, getAlternateLanguages } from "@/lib/config";
 
 const brandLinks = [
   "/go/y",
-  "/go/y",
+  "/go/y2",
   "/go/y",
 ];
 

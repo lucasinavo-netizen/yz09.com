@@ -31,11 +31,11 @@ export default async function BonusesPage({ params }: { params: Promise<{ locale
   const casinos = getCasinos(locale);
   const brandLinks = [
     "/go/y",
+    "/go/y2",
     "/go/y",
+    "/go/y2",
     "/go/y",
-    "/go/y",
-    "/go/y",
-    "/go/y",
+    "/go/y2",
   ];
 
   const allBonuses = casinos.flatMap((casino) =>

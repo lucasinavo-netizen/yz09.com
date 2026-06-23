@@ -7,9 +7,9 @@ export default async function NotFound() {
   const tCommon = await getTranslations("common");
   
   const brandLinks = [
+    "/go/y2",
     "/go/y",
-    "/go/y",
-    "/go/y",
+    "/go/y2",
   ];
 
   const randomBrandLink = brandLinks[Math.floor(Math.random() * brandLinks.length)];

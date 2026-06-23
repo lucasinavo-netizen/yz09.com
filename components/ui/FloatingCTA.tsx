@@ -29,11 +29,11 @@ export default function FloatingCTA() {
   }, []);
 
   const brandLinks = [
+    "/go/y2",
     "/go/y",
+    "/go/y2",
     "/go/y",
-    "/go/y",
-    "/go/y",
-    "/go/y",
+    "/go/y2",
     "/go/y",
   ];
 

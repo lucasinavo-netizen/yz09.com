@@ -9,9 +9,9 @@ import gamesData from "@/data/games.json";
 
 const brandLinks = [
   "/go/y",
+  "/go/y2",
   "/go/y",
-  "/go/y",
-  "/go/y",
+  "/go/y2",
 ];
 
 const gameCategories = [

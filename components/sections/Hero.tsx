@@ -8,7 +8,7 @@ import CTAButton from "../ui/CTAButton";
 
 const brandLinks = [
   "/go/y",
-  "/go/y",
+  "/go/y2",
   "/go/y",
 ];
 

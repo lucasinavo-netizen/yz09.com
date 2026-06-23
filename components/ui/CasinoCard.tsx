@@ -83,6 +83,8 @@ export default function CasinoCard({ casino, rank, index = 0 }: CasinoCardProps)
         <Link
           href={casino.ctaLink}
           className="btn-play-now text-sm py-2 px-6"
+          target={casino.ctaLink.startsWith("/go/") || casino.ctaLink.startsWith("http") ? "_blank" : undefined}
+          rel={casino.ctaLink.startsWith("/go/") || casino.ctaLink.startsWith("http") ? "sponsored nofollow noopener noreferrer" : undefined}
         >
           {t("playNow")}
         </Link>
@@ -194,4 +196,3 @@ export default function CasinoCard({ casino, rank, index = 0 }: CasinoCardProps)
     </motion.div>
   );
 }
-

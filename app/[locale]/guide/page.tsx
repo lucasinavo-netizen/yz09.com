@@ -24,9 +24,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 }
 
 const brandLinks = [
+  "/go/y2",
   "/go/y",
-  "/go/y",
-  "/go/y",
+  "/go/y2",
 ];
 
 export default async function GuidePage({ params }: { params: Promise<{ locale: string }> }) {

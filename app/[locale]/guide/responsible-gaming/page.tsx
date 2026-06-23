@@ -5,9 +5,9 @@ import CTAButton from "@/components/ui/CTAButton";
 import { getCanonicalUrl, getAlternateLanguages } from "@/lib/config";
 
 const brandLinks = [
+  "/go/y2",
   "/go/y",
-  "/go/y",
-  "/go/y",
+  "/go/y2",
 ];
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {

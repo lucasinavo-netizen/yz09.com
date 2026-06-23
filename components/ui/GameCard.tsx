@@ -63,7 +63,8 @@ export default function GameCard({ game, ctaLink }: GameCardProps) {
         <Link
           href={ctaLink}
           className="block w-full"
-          rel="nofollow sponsored noopener noreferrer"
+          target={ctaLink.startsWith("/go/") || ctaLink.startsWith("http") ? "_blank" : undefined}
+          rel={ctaLink.startsWith("/go/") || ctaLink.startsWith("http") ? "sponsored nofollow noopener noreferrer" : undefined}
         >
           <button className="w-full bg-casino-green-500 hover:bg-casino-green-600 text-white font-semibold py-2.5 px-4 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-casino-green-500/50 hover:-translate-y-0.5">
             {t("playNow")}
@@ -73,4 +74,3 @@ export default function GameCard({ game, ctaLink }: GameCardProps) {
     </div>
   );
 }
-

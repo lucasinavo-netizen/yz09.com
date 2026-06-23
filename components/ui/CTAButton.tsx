@@ -20,6 +20,7 @@ export default function CTAButton({
   className = "",
   onClick,
 }: CTAButtonProps) {
+  const isAffiliateLink = href.startsWith("/go/") || href.startsWith("http");
   const baseStyles = "relative inline-flex items-center justify-center font-bold rounded-lg transition-all duration-300 overflow-hidden group";
   
   const variants = {
@@ -44,8 +45,8 @@ export default function CTAButton({
         href={href}
         onClick={onClick}
         className={`${baseStyles} ${variants[variant]} ${sizes[size]}`}
-        target={href.startsWith('http') ? '_blank' : undefined}
-        rel={href.startsWith('http') ? 'nofollow sponsored noopener noreferrer' : undefined}
+        target={isAffiliateLink ? "_blank" : undefined}
+        rel={isAffiliateLink ? "sponsored nofollow noopener noreferrer" : undefined}
       >
         <span className="relative z-10 flex items-center gap-2">
           {children}
@@ -70,4 +71,3 @@ export default function CTAButton({
     </motion.div>
   );
 }
-

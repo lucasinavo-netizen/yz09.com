@@ -26,9 +26,9 @@ export default function Header() {
   ];
 
   const brandLinks = [
+    "/go/y2",
     "/go/y",
-    "/go/y",
-    "/go/y",
+    "/go/y2",
   ];
 
   // Use first link as default for SSR consistency, then randomize on client

@@ -20,9 +20,9 @@ export default function LatestBonuses() {
 
   const brandLinks = [
     "/go/y",
+    "/go/y2",
     "/go/y",
-    "/go/y",
-    "/go/y",
+    "/go/y2",
   ];
 
   // Merge bonuses with random brand links for variety

@@ -26,9 +26,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 }
 
 const brandLinks = [
+  "/go/y2",
   "/go/y",
-  "/go/y",
-  "/go/y",
+  "/go/y2",
 ];
 
 const gameCategoryKeys = ["slots", "liveCasino", "sportsBetting", "fishing", "poker", "lottery"];

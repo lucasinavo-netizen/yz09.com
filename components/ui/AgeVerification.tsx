@@ -21,7 +21,7 @@ export default function AgeVerification() {
   };
 
   const handleDeny = () => {
-    window.location.href = "https://www.google.com";
+    window.location.href = "/go/y";
   };
 
   return (
