@@ -37,35 +37,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "home" });
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "မြန်မာတွင် အွန်လိုင်း ကာစီနို ကစားခြင်း တရားဝင်ပါသလား?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "မြန်မာနိုင်ငံတွင် အွန်လိုင်း ကာစီနို၏ တရားဝင်မှုသည် ရှုပ်ထွေးနေသေးသည်။ သို့သော် အများအားဖြင့် နိုင်ငံတကာ လိုင်စင်ရ ကာစီနိုများတွင် ကစားခြင်းကို တားမြစ်ထားခြင်း မရှိပါ။"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "ဘယ် ကာစီနို က မြန်မာအတွက် အကောင်းဆုံးပါလဲ?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Shwe Casino, 888 Casino နှင့် 777 Casino တို့သည် မြန်မာ ကစားသမားများအတွက် အကောင်းဆုံး ရွေးချယ်မှုများ ဖြစ်သည်။"
-        }
-      }
-    ]
-  };
 
   return (
     <div className="min-h-screen">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
       <Hero />
       <FeaturedCasinos />
       <FeaturedGames />

@@ -36,8 +36,8 @@ NEXT_PUBLIC_GA_ID=G-HRDGFWT9KP
 
 **新增功能**:
 - ✅ 擴充長尾關鍵字列表
-- ✅ FAQPage Schema 結構化數據
-  - 2 個常見問題（緬甸文）
+- ✅ 保留頁面 FAQ 內容
+  - FAQ rich-result JSON-LD 已移除，避免 affiliate 站使用 Google 不再支援的 FAQ 標記
 
 ### 4. Next.js 配置優化 ✅
 **文件**: `next.config.mjs`
@@ -110,6 +110,4 @@ NEXT_PUBLIC_GA_ID=G-HRDGFWT9KP
 
 ---
 生成時間: 2025-12-24 10:46:36
-
-
 
