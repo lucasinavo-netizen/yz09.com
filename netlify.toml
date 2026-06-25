@@ -11,7 +11,7 @@
   force = true
 
 [build]
-  command = "npm run build"
+  command = "npm run build -- --webpack"
   publish = ".next"
 
 [[headers]]
