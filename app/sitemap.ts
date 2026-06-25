@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
 import casinosEn from '@/data/casinos-en.json';
-import { locales, defaultLocale } from '@/i18n/config';
+import { defaultLocale } from '@/i18n/config';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = (process.env.NEXT_PUBLIC_BASE_URL || 'https://yz09.com').replace(/\/+$/, '');
@@ -13,13 +13,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     return `${baseUrl}/${locale}${cleanPath}`;
   };
 
-  const languageAlternates = (path: string): Record<string, string> => {
-    const out: Record<string, string> = {};
-    for (const locale of locales) {
-      out[locale] = createUrl(path, locale);
-    }
-    return out;
-  };
+  const languageAlternates = (path: string): Record<string, string> => ({
+    'my-MM': createUrl(path, 'my'),
+    'en-US': createUrl(path, 'en'),
+  });
 
   const createSitemapEntry = (
     path: string,
