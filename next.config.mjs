@@ -41,7 +41,8 @@ const nextConfig = {
   async redirects() {
     return [
       // Affiliate cloaking — hide operator URL/ID from Google. Disallowed in robots.txt.
-      { source: '/go/y', destination: 'https://www.mm38aa.com/m/home?affiliateCode=lu0001', permanent: false },
+      { source: '/go/y', destination: 'https://www.rr95k.com/?ch=0cf28df51e', permanent: false },
+      { source: '/go/y2', destination: 'https://www.rr95k.com/?ch=0cf28df51e', permanent: false },
     ];
   },
   async headers() {
@@ -61,4 +62,3 @@ const nextConfig = {
 };
 
 export default withNextIntl(nextConfig);
-
