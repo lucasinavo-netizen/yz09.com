@@ -42,9 +42,9 @@ export default function InternalLinksSection() {
       title: t("blog"),
       links: [
         { href: "/blog", label: tBlog("heading") },
-        { href: "/blog/top-10-slot-games-2025", label: t("top10Slots") },
-        { href: "/blog/how-to-choose-online-casino", label: t("chooseCasino") },
-        { href: "/blog/pragmatic-play-complete-guide", label: t("pragmaticGuide") },
+        { href: "/games/slots", label: t("top10Slots") },
+        { href: "/review/top-myanmar-casinos", label: t("chooseCasino") },
+        { href: "/games/live-casino", label: t("pragmaticGuide") },
       ]
     }
   ];
@@ -86,4 +86,3 @@ export default function InternalLinksSection() {
     </section>
   );
 }
-
