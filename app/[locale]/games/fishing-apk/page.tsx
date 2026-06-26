@@ -97,6 +97,77 @@ export default async function FishingApkPage({ params }: { params: Promise<{ loc
         </section>
 
         <section className="bg-dark-lighter border border-dark-lightest rounded-xl p-6 mt-6">
+          <h2 className="text-2xl font-bold text-white mb-4">Search intent split for fishing APK terms</h2>
+          <p className="text-gray-300 leading-relaxed mb-4">This page should target APK, download, Android, install, and app-source questions. The main fishing guide should target game choice, room levels, 777 fish game intent, and gameplay comparison. Separating those jobs helps Google understand why both URLs should exist.</p>
+          <div className="overflow-x-auto">
+            <table className="w-full text-left text-gray-300 border-collapse">
+              <thead><tr className="text-white"><th className="border border-dark-lightest p-3">Query pattern</th><th className="border border-dark-lightest p-3">User problem</th><th className="border border-dark-lightest p-3">Best page</th></tr></thead>
+              <tbody>
+                <tr><td className="border border-dark-lightest p-3">ငါး ပစ် ဂိမ်း apk</td><td className="border border-dark-lightest p-3">Wants Android install or file source</td><td className="border border-dark-lightest p-3">This APK safety page</td></tr>
+                <tr><td className="border border-dark-lightest p-3">777 ငါးမုဆိုးဂိမ်း</td><td className="border border-dark-lightest p-3">Wants fishing game selection or gameplay</td><td className="border border-dark-lightest p-3">Main fishing guide</td></tr>
+                <tr><td className="border border-dark-lightest p-3">fish shooting login</td><td className="border border-dark-lightest p-3">Needs account or app access</td><td className="border border-dark-lightest p-3">This page plus login support</td></tr>
+                <tr><td className="border border-dark-lightest p-3">casino deposit not showing</td><td className="border border-dark-lightest p-3">Payment proof issue after app use</td><td className="border border-dark-lightest p-3">Payment guide</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section className="bg-dark-lighter border border-dark-lightest rounded-xl p-6 mt-6">
+          <h2 className="text-2xl font-bold text-white mb-4">Browser route versus APK route</h2>
+          <p className="text-gray-300 leading-relaxed mb-4">A browser route is usually the safer first test because it does not require file permissions. If browser login works but the APK fails, the issue is likely app version, cache, device compatibility, or source mismatch. If both fail, collect the exact error text before trying another mirror.</p>
+          <ul className="text-gray-300 leading-relaxed space-y-3 list-disc pl-6">
+            <li>Use browser access first when the APK source is unclear.</li>
+            <li>Do not install a second APK from a comment or chat group just because the first app failed.</li>
+            <li>Check whether the app and browser show the same cashier and support details.</li>
+            <li>If the app asks for unrelated phone permissions, stop and use the browser route.</li>
+          </ul>
+        </section>
+
+        <section className="bg-dark-lighter border border-dark-lightest rounded-xl p-6 mt-6">
+          <h2 className="text-2xl font-bold text-white mb-4">Room-level and bankroll risk</h2>
+          <p className="text-gray-300 leading-relaxed mb-4">Fish shooting games can drain balance faster than normal slot spins because bullet cost and room level change the session speed. A useful APK page should warn users not to jump into high rooms immediately after installation.</p>
+          <div className="grid md:grid-cols-3 gap-4 text-gray-300">
+            <div className="bg-dark rounded-lg p-4 border border-dark-lightest"><h3 className="text-white font-bold mb-2">Small room</h3><p>Best for testing controls, bullet cost, lag, and account stability after login.</p></div>
+            <div className="bg-dark rounded-lg p-4 border border-dark-lightest"><h3 className="text-white font-bold mb-2">Medium room</h3><p>Use only after payment and login proof are clear. Set a time and loss limit.</p></div>
+            <div className="bg-dark rounded-lg p-4 border border-dark-lightest"><h3 className="text-white font-bold mb-2">High room</h3><p>Higher speed and larger swings. Avoid during bonus turnover or app-source uncertainty.</p></div>
+          </div>
+        </section>
+
+        <section className="bg-dark-lighter border border-dark-lightest rounded-xl p-6 mt-6">
+          <h2 className="text-2xl font-bold text-white mb-4">Payment proof after fishing app play</h2>
+          <p className="text-gray-300 leading-relaxed mb-4">Payment proof should be collected before a dispute happens. Fish shooting sessions can move quickly, so users need account ID, route used, room level, wallet proof, and timestamp ready if a deposit or withdrawal is delayed.</p>
+          <ul className="text-gray-300 leading-relaxed space-y-3 list-disc pl-6">
+            <li>Save TxID, amount, wallet name, account ID, and exact payment time.</li>
+            <li>Record app version or browser route if the account later fails to open.</li>
+            <li>Do not send OTP, wallet password, or recovery code to prove ownership.</li>
+            <li>If support asks about a fishing game result, provide game time and room level rather than private wallet data.</li>
+          </ul>
+        </section>
+
+        <section className="bg-dark-lighter border border-dark-lightest rounded-xl p-6 mt-6">
+          <h2 className="text-2xl font-bold text-white mb-4">App update and mirror safety</h2>
+          <p className="text-gray-300 leading-relaxed mb-4">Fishing APK users often move between mirror links when one route slows down. That creates account and payment risk. A safer update path is to verify the route first, compare brand details, and avoid installing a new file during an active payment or withdrawal issue.</p>
+          <ul className="text-gray-300 leading-relaxed space-y-3 list-disc pl-6">
+            <li>Do not install a forced update from a private message while a deposit is pending.</li>
+            <li>Compare app name, logo, support route, and cashier wording before login.</li>
+            <li>Keep the previous working route recorded until the new route is verified.</li>
+            <li>If the update changes permissions or asks for OTP, stop and use browser access.</li>
+          </ul>
+        </section>
+
+        <section className="bg-dark-lighter border border-dark-lightest rounded-xl p-6 mt-6">
+          <h2 className="text-2xl font-bold text-white mb-4">What this page should not promise</h2>
+          <p className="text-gray-300 leading-relaxed mb-4">This page should not promise an official APK download, guaranteed wins, guaranteed boss fish hits, or guaranteed withdrawals. Those claims are not useful and can make the page look like a thin gambling doorway. The stronger SEO angle is practical safety: app source, permission risk, room-level control, and payment proof.</p>
+          <p className="text-gray-300 leading-relaxed">If future content needs to discuss a specific fishing provider, jackpot mechanic, or game strategy, that should support the main fishing guide. If future content discusses Android install errors, blocked app routes, permission warnings, or app update issues, it should support this APK page.</p>
+        </section>
+
+        <section className="bg-dark-lighter border border-dark-lightest rounded-xl p-6 mt-6">
+          <h2 className="text-2xl font-bold text-white mb-4">How this page supports future daily articles</h2>
+          <p className="text-gray-300 leading-relaxed mb-4">This URL should become the parent for fish-shooting APK support articles. A daily article about APK not installing, game app update, Android permission warning, slow app login, or fishing game browser fallback should link here. A daily article about game selection or 777 fish room strategy should link to the main fishing page.</p>
+          <p className="text-gray-300 leading-relaxed">That structure prevents YZ09 from publishing many similar pages that all chase the same keyword. Each article gets a clear parent, and Search Console data can later show whether APK, gameplay, or payment intent deserves the next update.</p>
+        </section>
+
+        <section className="bg-dark-lighter border border-dark-lightest rounded-xl p-6 mt-6">
           <h2 className="text-2xl font-bold text-white mb-4">Troubleshooting after APK install</h2>
           <div className="space-y-4 text-gray-300 leading-relaxed">
             <p>If the app opens but login fails, do not immediately download a second APK from a chat group. First clear cache, test browser login, check phone-number format, and confirm whether the operator is in maintenance. Many Myanmar users lose accounts because they install a second file while trying to solve a simple login problem.</p>
