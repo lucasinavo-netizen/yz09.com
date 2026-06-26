@@ -162,6 +162,17 @@ export default async function FishingApkPage({ params }: { params: Promise<{ loc
         </section>
 
         <section className="bg-dark-lighter border border-dark-lightest rounded-xl p-6 mt-6">
+          <h2 className="text-2xl font-bold text-white mb-4">Support escalation checklist</h2>
+          <p className="text-gray-300 leading-relaxed mb-4">If a fishing APK problem turns into a support case, the user should keep the message short and evidence-based. The most useful details are account ID, route used, app or browser version, device type, network type, game room, payment status, exact error text, and timestamp. Long emotional messages usually slow the case down because support still needs these facts.</p>
+          <p className="text-gray-300 leading-relaxed mb-4">The support message should not include OTP, wallet password, banking password, phone unlock code, or recovery code. If support asks for one of those details, the user should stop and verify the route again from the main guide before continuing.</p>
+          <ul className="text-gray-300 leading-relaxed space-y-3 list-disc pl-6">
+            <li>For login problems, send account ID, route, device, network, and error text.</li>
+            <li>For deposit problems, send TxID, amount, wallet name, account ID, and payment time.</li>
+            <li>For game-room problems, send room level, game time, app version, and screenshot of the issue.</li>
+          </ul>
+        </section>
+
+        <section className="bg-dark-lighter border border-dark-lightest rounded-xl p-6 mt-6">
           <h2 className="text-2xl font-bold text-white mb-4">How this page supports future daily articles</h2>
           <p className="text-gray-300 leading-relaxed mb-4">This URL should become the parent for fish-shooting APK support articles. A daily article about APK not installing, game app update, Android permission warning, slow app login, or fishing game browser fallback should link here. A daily article about game selection or 777 fish room strategy should link to the main fishing page.</p>
           <p className="text-gray-300 leading-relaxed">That structure prevents YZ09 from publishing many similar pages that all chase the same keyword. Each article gets a clear parent, and Search Console data can later show whether APK, gameplay, or payment intent deserves the next update.</p>
