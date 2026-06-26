@@ -69,6 +69,7 @@ const pageCopy = {
     relatedTitle: "နောက်ထပ်အသုံးဝင်သော စာမျက်နှာများ",
     related: [
       { href: "/games/slots", label: "စလော့ဂိမ်းများနှင့် fishing game ကွာခြားချက်" },
+      { href: "/games/fishing-apk", label: "ငါး ပစ် ဂိမ်း APK safety guide" },
       { href: "/payment", label: "KBZ Pay / Wave Money ငွေလွှဲနည်းများ" },
       { href: "/guide/how-to-play", label: "အကောင့်ဖွင့်ပြီး စတင်ကစားနည်း" },
     ],

@@ -54,7 +54,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     createSitemapEntry(`/review/${casino.slug}`, new Date(), 'weekly', 0.8)
   );
 
-  const gameCategoryPaths = ['/games/slots', '/games/live-casino', '/games/fishing', '/games/table-games'];
+  const gameCategoryPaths = ['/games/slots', '/games/live-casino', '/games/fishing', '/games/fishing-apk', '/games/table-games'];
   const gameCategoryPages: MetadataRoute.Sitemap = gameCategoryPaths.map((path) =>
     createSitemapEntry(path, new Date(), 'weekly', 0.9)
   );
