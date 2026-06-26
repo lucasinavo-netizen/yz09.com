@@ -21,6 +21,8 @@ export default function CTAButton({
   onClick,
 }: CTAButtonProps) {
   const baseStyles = "relative inline-flex items-center justify-center font-bold rounded-lg transition-all duration-300 overflow-hidden group";
+  const isExternal = href.startsWith("http");
+  const isAffiliateRedirect = href.startsWith("/go/");
   
   const variants = {
     primary: "bg-casino-purple-600 hover:bg-casino-purple-700 text-white shadow-lg shadow-casino-purple/50",
@@ -44,8 +46,8 @@ export default function CTAButton({
         href={href}
         onClick={onClick}
         className={`${baseStyles} ${variants[variant]} ${sizes[size]}`}
-        target={href.startsWith('http') ? '_blank' : undefined}
-        rel={href.startsWith('http') ? 'nofollow sponsored noopener noreferrer' : undefined}
+        target={isExternal ? '_blank' : undefined}
+        rel={isExternal ? 'nofollow sponsored noopener noreferrer' : isAffiliateRedirect ? 'nofollow sponsored' : undefined}
       >
         <span className="relative z-10 flex items-center gap-2">
           {children}
@@ -70,4 +72,3 @@ export default function CTAButton({
     </motion.div>
   );
 }
-
