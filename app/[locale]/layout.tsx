@@ -102,6 +102,56 @@ export default async function LocaleLayout({
           `,
         }}
       />
+      <Script
+        id="affiliate-click-tracking"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function () {
+              if (window.__affiliateClickTrackingInstalled) return;
+              window.__affiliateClickTrackingInstalled = true;
+              function textOf(link) {
+                return (link.textContent || '').replace(/\\s+/g, ' ').trim().slice(0, 120);
+              }
+              function placementOf(link) {
+                if (link.closest('header, nav')) return 'nav';
+                if (link.closest('footer')) return 'footer';
+                if (link.closest('article')) return 'article_cta';
+                var marker = [
+                  link.getAttribute('class'),
+                  link.closest('[class]') && link.closest('[class]').getAttribute('class')
+                ].filter(Boolean).join(' ').toLowerCase();
+                if (marker.indexOf('hero') !== -1) return 'hero';
+                if (marker.indexOf('card') !== -1 || marker.indexOf('grid') !== -1) return 'card';
+                if (marker.indexOf('cta') !== -1 || marker.indexOf('button') !== -1) return 'cta';
+                return 'content';
+              }
+              document.addEventListener('click', function (event) {
+                var link = event.target && event.target.closest ? event.target.closest('a[href]') : null;
+                if (!link) return;
+                var rawHref = link.getAttribute('href') || '';
+                var url;
+                try { url = new URL(rawHref, window.location.href); } catch (error) { return; }
+                if (url.pathname.indexOf('/go/') !== 0) return;
+                if (typeof window.gtag === 'function') {
+                  window.gtag('event', 'affiliate_click', {
+                    event_category: 'affiliate',
+                    event_label: url.pathname,
+                    go_path: url.pathname,
+                    link_url: url.href,
+                    link_text: textOf(link),
+                    page_location: window.location.href,
+                    page_path: window.location.pathname,
+                    site: window.location.hostname.replace(/^www\\./, ''),
+                    placement: placementOf(link),
+                    transport_type: 'beacon'
+                  });
+                }
+              }, true);
+            })();
+          `,
+        }}
+      />
       <NextIntlClientProvider messages={messages}>
         <AgeVerification />
         <Header />
