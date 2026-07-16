@@ -1,5 +1,5 @@
 export default async (request) => {
-  return Response.redirect('https://www.myan99.me/m/home?affiliateCode=seom202', 302);
+  return Response.redirect('https://www.rr95k.com/?ch=0cf28df51e', 302);
 };
 
 export const config = {
