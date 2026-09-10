@@ -10,7 +10,7 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: '*',
         allow: '/',
         // Do not disallow /_next/ — Google needs /_next/static/ and /_next/image to render pages
-        disallow: ['/api/', '/admin/'],
+        disallow: ['/api/', '/admin/', '/go/'],
       },
     ],
     sitemap: `${baseUrl}/sitemap.xml`,

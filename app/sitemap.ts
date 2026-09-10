@@ -48,6 +48,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     createSitemapEntry('/guide/how-to-play', new Date(), 'monthly', 0.8),
     createSitemapEntry('/guide/payment-methods', new Date(), 'monthly', 0.8),
     createSitemapEntry('/guide/responsible-gaming', new Date(), 'monthly', 0.7),
+    { url: `${baseUrl}/vi.html`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 },
   ];
 
   const casinoPages: MetadataRoute.Sitemap = casinosEn.map((casino: { slug: string }) =>

@@ -180,6 +180,7 @@ export default function Footer() {
             <p className="text-white/50 text-xs text-center md:text-right">
               {t("ageRestriction")}
             </p>
+            <a href="/vi.html" hreflang="vi" lang="vi" className="text-white/50 text-xs hover:text-gold">Tiếng Việt</a>
           </div>
         </div>
       </div>
