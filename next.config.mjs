@@ -43,8 +43,6 @@ const nextConfig = {
   async redirects() {
     return [
       // Affiliate cloaking — hide operator URL/ID from Google. Disallowed in robots.txt.
-      { source: '/godiag/a', destination: 'https://example.com/', permanent: false },
-      { source: '/godiag/b', destination: 'https://www.v123888.com/agent/AUKMEH', permanent: false },
       { source: '/go/vn', destination: 'https://www.v123888.com/agent/AUKMEH', permanent: false },
       { source: '/go/y', destination: 'https://www.myan99.me/m/home?affiliateCode=seom202', permanent: false },
       { source: '/go/y2', destination: 'https://www.myan99.me/m/home?affiliateCode=seom202', permanent: false },
